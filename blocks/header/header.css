@@ -266,3 +266,50 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+/* Header */
+header .nav-wrapper {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+header nav a:any-link {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 4px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+header nav a:any-link:hover {
+   text-decoration: none;
+}
+
+header nav .nav-sections .default-content-wrapper > ul > li{
+    padding: 8px 16px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+header .nav-wrapper .nav-brand {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+@media(min-width: 992px){
+   
+    header nav[aria-expanded='true'] .nav-sections {
+      display: flex !important;
+      justify-content: end;
+    }
+   
+     header nav .nav-sections .default-content-wrapper > ul > li:hover, header .nav-wrapper .nav-brand:hover{
+        background-color: #ccc !important;
+         text-decoration: none;
+    }
+    header .nav-wrapper .nav-brand {
+        flex-basis: 223px;
+        padding: 8px 16px;
+    }
+   
+}
